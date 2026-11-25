@@ -17,7 +17,7 @@ db_name = os.environ.get('DB_NAME', 'example')
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Код, который выполнится перед запуском приложения
-    print("Приложение запускается...")
+    print("Приложение   запускается...")
     if ensure_table_exists():
         print("Соединение с БД установлено и таблица 'requests' готова к работе.")
     else:
